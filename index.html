@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Algebra Foundation — Bantuan biaya kuliah bulanan untuk mahasiswa D3 &amp; S1</title>
-<meta name="description" content="Algebra Foundation menyalurkan bantuan biaya kuliah dan biaya hidup setiap bulan untuk mahasiswa D3 dan S1 di Indonesia. Pendaftaran gratis lewat Google Form.">
+<meta name="description" content="Algebra Foundation menyalurkan bantuan biaya hidup setiap bulan untuk mahasiswa D3 dan S1 di Indonesia. Pendaftaran gratis lewat Google Form.">
 <meta name="theme-color" content="#123363">
 <meta property="og:title" content="Algebra Foundation">
 <meta property="og:description" content="Bantuan biaya kuliah bulanan untuk mahasiswa D3 & S1 di Indonesia.">
@@ -163,29 +163,34 @@ a{ color:inherit; }
 .hero__lead{ font-size:clamp(16px,1.6vw,18.5px); line-height:1.68; color:#C3D9EE; max-width:52ch; margin:18px 0 30px; }
 .hero__cta{ display:flex; flex-wrap:wrap; gap:12px; }
 
-/* --- TANDA TANGAN: tumpukan bukti transfer --- */
-.slips{ position:relative; height:330px; }
-.slip{
-  position:absolute; left:0; right:0; border-radius:18px; padding:20px 22px;
-  background:linear-gradient(150deg, #FFFFFF, #F2F7FD);
-  box-shadow:0 30px 60px -28px rgba(4,16,36,.85);
-  color:var(--navy);
+/* --- TANDA TANGAN: daftar kampus asal penerima --- */
+.kampus{
+  background:linear-gradient(150deg, rgba(255,255,255,.11), rgba(255,255,255,.035));
+  border:1px solid rgba(156,198,236,.26);
+  border-radius:18px; padding:26px 28px 22px;
+  box-shadow:0 30px 62px -34px rgba(4,16,36,.85);
+  backdrop-filter:blur(6px);
 }
-.slip--3{ top:0;   transform:rotate(-4deg) scale(.9);  opacity:.5; }
-.slip--2{ top:44px; transform:rotate(2.5deg) scale(.95); opacity:.78; }
-.slip--1{ top:96px; transform:rotate(-1deg); }
-.slip--1{ animation:bob 6s ease-in-out infinite; }
-@keyframes bob{ 0%,100%{ transform:rotate(-1deg) translateY(0); } 50%{ transform:rotate(-1deg) translateY(-9px); } }
-
-.slip__top{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px; }
-.slip__tag{ display:flex; align-items:center; gap:7px; font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:#1F8A56; }
-.slip__tag .dot{ width:7px; height:7px; border-radius:50%; background:#22A366; }
-.slip__when{ font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.04em; }
-.slip__amt{ font-family:var(--serif); font-size:34px; font-weight:600; letter-spacing:-.02em; line-height:1; margin:0 0 4px; }
-.slip__from{ font-size:13.5px; color:var(--muted); margin:0 0 16px; }
-.slip__foot{ display:flex; align-items:center; gap:10px; border-top:1px dashed var(--line); padding-top:13px; }
-.slip__ava{ width:28px; height:28px; border-radius:8px; background:linear-gradient(150deg,var(--azure),var(--navy)); flex:none; }
-.slip__note{ font-size:12.5px; color:var(--muted); margin:0; }
+.kampus__head{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.17em; text-transform:uppercase;
+  color:var(--azure-300); margin:0 0 6px; padding-bottom:15px;
+  border-bottom:1px solid rgba(156,198,236,.24);
+}
+.kampus__list{ list-style:none; margin:0; padding:0; }
+.kampus__list li{
+  display:flex; align-items:baseline; justify-content:space-between; gap:16px;
+  padding:12px 0; border-bottom:1px solid rgba(156,198,236,.13);
+}
+.kampus__list li:last-child{ border-bottom:0; }
+.kampus__nama{ font-size:15.5px; font-weight:500; color:#EAF2FA; line-height:1.35; }
+.kampus__kota{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:#8FB0CE; flex:none;
+}
+.kampus__more{
+  font-family:var(--mono); font-size:11.5px; color:#8FB0CE; margin:0;
+  padding-top:15px; border-top:1px solid rgba(156,198,236,.24);
+}
 
 /* --- rel bulan --- */
 .ledger{ margin-top:clamp(40px,6vw,60px); }
@@ -446,7 +451,7 @@ a{ color:inherit; }
 /* =========== RESPONSIF =========== */
 @media (max-width:980px){
   .hero__grid{ grid-template-columns:1fr; gap:44px; }
-  .slips{ height:300px; max-width:420px; margin:0 auto; }
+  .kampus{ max-width:460px; margin:0 auto; }
   .hero__rings{ top:-12%; right:-40%; opacity:.35; }
 }
 @media (max-width:900px){
@@ -479,8 +484,8 @@ a{ color:inherit; }
   body{ font-size:16px; }
   .strip__grid{ grid-template-columns:1fr 1fr; }
   .foot__inner{ grid-template-columns:1fr; gap:32px; }
-  .slips{ height:290px; }
-  .slip__amt{ font-size:30px; }
+  .kampus{ padding:22px 20px 18px; }
+  .kampus__nama{ font-size:14.5px; }
 }
 
 @media (prefers-reduced-motion:reduce){
@@ -543,7 +548,7 @@ a{ color:inherit; }
       <p class="eyebrow reveal"><span class="dot"></span> Pendaftaran angkatan 4 dibuka</p>
 
       <h1 class="hero__title reveal">
-        Biaya kuliah datang<br>tiap bulan.<br>
+        Kos dan makan datang<br>tiap bulan.<br>
         <em>Bantuan kami juga.</em>
       </h1>
 
@@ -552,7 +557,7 @@ a{ color:inherit; }
       </svg>
 
       <p class="hero__lead reveal">
-        Algebra Foundation menyalurkan bantuan biaya hidup dan biaya kuliah setiap bulan
+        Algebra Foundation menyalurkan bantuan biaya hidup setiap bulan
         untuk mahasiswa D3 dan S1 di Indonesia yang punya semangat belajar tinggi,
         tapi terkendala biaya. Gratis, tanpa ikatan dinas.
       </p>
@@ -566,40 +571,19 @@ a{ color:inherit; }
       </div>
     </div>
 
-    <!-- tumpukan bukti transfer bulanan -->
-    <div class="slips" aria-hidden="true">
-      <div class="slip slip--3">
-        <div class="slip__top">
-          <span class="slip__tag"><span class="dot"></span> Dana masuk</span>
-          <span class="slip__when">5 Agu</span>
-        </div>
-        <p class="slip__amt">Rp 750.000</p>
-        <p class="slip__from">Algebra Foundation</p>
-      </div>
-
-      <div class="slip slip--2">
-        <div class="slip__top">
-          <span class="slip__tag"><span class="dot"></span> Dana masuk</span>
-          <span class="slip__when">5 Sep</span>
-        </div>
-        <p class="slip__amt">Rp 750.000</p>
-        <p class="slip__from">Algebra Foundation</p>
-      </div>
-
-      <div class="slip slip--1">
-        <div class="slip__top">
-          <span class="slip__tag"><span class="dot"></span> Dana masuk</span>
-          <span class="slip__when">5 Okt · 09.12</span>
-        </div>
-        <!-- GANTI: nominal bantuan sesuai kebijakan yayasan -->
-        <p class="slip__amt">Rp 750.000</p>
-        <p class="slip__from">Algebra Foundation · Bantuan bulanan</p>
-        <div class="slip__foot">
-          <span class="slip__ava"></span>
-          <p class="slip__note">Masuk otomatis tiap tanggal 5, tanpa perlu mengajukan ulang.</p>
-        </div>
-      </div>
-    </div>
+    <!-- GANTI: isi dengan kampus asal penerima yang sebenarnya -->
+    <aside class="kampus reveal">
+      <p class="kampus__head">Penerima kami kuliah di</p>
+      <ul class="kampus__list">
+        <li><span class="kampus__nama">Politeknik Negeri Semarang</span><span class="kampus__kota">Semarang</span></li>
+        <li><span class="kampus__nama">Universitas Negeri Yogyakarta</span><span class="kampus__kota">Yogyakarta</span></li>
+        <li><span class="kampus__nama">Universitas Hasanuddin</span><span class="kampus__kota">Makassar</span></li>
+        <li><span class="kampus__nama">Politeknik Negeri Bandung</span><span class="kampus__kota">Bandung</span></li>
+        <li><span class="kampus__nama">Universitas Sriwijaya</span><span class="kampus__kota">Palembang</span></li>
+        <li><span class="kampus__nama">Universitas Jember</span><span class="kampus__kota">Jember</span></li>
+      </ul>
+      <p class="kampus__more">dan 26 kampus lain di 17 kota</p>
+    </aside>
   </div>
 
   <!-- rel 12 bulan -->
@@ -619,7 +603,7 @@ a{ color:inherit; }
         <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Jun</span></div>
         <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Jul</span></div>
       </div>
-      <p class="ledger__note">Cair setiap tanggal 5 &nbsp;·&nbsp; sepanjang masa studi, bukan sekali di awal tahun</p>
+      <p class="ledger__note">Rp 300.000 tiap bulan &nbsp;·&nbsp; cair setiap tanggal 25 &nbsp;·&nbsp; sepanjang masa studi</p>
     </div>
   </div>
 </section>
@@ -629,7 +613,7 @@ a{ color:inherit; }
   <div class="wrap strip__grid">
     <!-- GANTI: angka-angka di bawah ini -->
     <div class="stat"><span class="stat__num">128</span><span class="stat__cap">penerima aktif</span></div>
-    <div class="stat"><span class="stat__num">31</span><span class="stat__cap">kampus mitra</span></div>
+    <div class="stat"><span class="stat__num">31</span><span class="stat__cap">kampus asal penerima</span></div>
     <div class="stat"><span class="stat__num">17</span><span class="stat__cap">kota &amp; kabupaten</span></div>
     <div class="stat"><span class="stat__num">Rp 1,1 M</span><span class="stat__cap">tersalurkan 2025</span></div>
   </div>
@@ -656,9 +640,10 @@ a{ color:inherit; }
         lalu mundur di tengah jalan karena kos, transportasi, dan uang makan tidak lagi tertutup.
       </p>
       <p>
-        Karena itu bantuan kami berbentuk bulanan, bukan sekali cair di awal tahun.
-        Uang yang masuk tiap bulan lebih mudah dipakai untuk kebutuhan yang juga datang
-        tiap bulan, dan lebih kecil kemungkinannya habis di satu kebutuhan besar.
+        UKT memang dibayar per semester, tapi kos, makan, dan ongkos ke kampus
+        datang setiap bulan tanpa jeda. Karena itu bantuan kami berbentuk bulanan,
+        bukan sekali cair di awal tahun — lebih cocok dengan pola pengeluaran
+        yang sebenarnya, dan lebih kecil kemungkinannya habis di satu kebutuhan besar.
       </p>
       <p>
         Dana berasal dari donasi perorangan, alumni, dan perusahaan mitra. Setiap rupiah
@@ -707,7 +692,7 @@ a{ color:inherit; }
         <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 12h.01M18 12h.01"/></svg></span>
         <p class="card__tag">Tiap bulan</p>
         <h3 class="card__title">Bantuan biaya hidup</h3>
-        <p class="card__text">Ditransfer langsung ke rekening penerima setiap tanggal 5. Bebas dipakai untuk kos, makan, transportasi, kuota, atau kebutuhan kuliah lain. Tidak perlu nota.</p>
+        <p class="card__text">Ditransfer langsung ke rekening penerima setiap tanggal 25. Bebas dipakai untuk kos, makan, transportasi, kuota, atau kebutuhan kuliah lain. Tidak perlu nota.</p>
       </article>
 
       <article class="card">
@@ -717,12 +702,6 @@ a{ color:inherit; }
         <p class="card__text">Untuk penerima yang belum tercakup KIP-K atau beasiswa kampus, tersedia bantuan tambahan saat pembayaran UKT. Diajukan lewat formulir perpanjangan.</p>
       </article>
 
-      <article class="card">
-        <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1.6a3.4 3.4 0 0 0-3.4-3.4H6.4A3.4 3.4 0 0 0 3 18.4V20"/><circle cx="9.5" cy="7.5" r="3.5"/><path d="M21 20v-1.6a3.4 3.4 0 0 0-2.6-3.3M15.5 4.2a3.5 3.5 0 0 1 0 6.6"/></svg></span>
-        <p class="card__tag">Sepanjang program</p>
-        <h3 class="card__title">Pendampingan &amp; mentor</h3>
-        <p class="card__text">Setiap penerima dipasangkan dengan mentor alumni sebidang untuk konsultasi akademik, magang, dan persiapan kerja. Pertemuan daring sebulan sekali.</p>
-      </article>
 
       <article class="card">
         <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a4.6 4.6 0 0 0-6.5 0L12 7.9 9.7 5.6a4.6 4.6 0 1 0-6.5 6.5l8.8 8.8 8.8-8.8a4.6 4.6 0 0 0 0-6.5z"/></svg></span>
@@ -748,7 +727,7 @@ a{ color:inherit; }
         <li>Warga negara Indonesia.</li>
         <li>Mahasiswa aktif D3, D4, atau S1 di perguruan tinggi terakreditasi, negeri maupun swasta.</li>
         <li>Sedang menempuh semester 2 sampai 6 saat mendaftar.</li>
-        <li>IPK minimal 3,00 dari skala 4,00.</li>
+        <li>IPK minimal 2,75 dari skala 4,00.</li>
         <li>Berasal dari keluarga prasejahtera, dibuktikan dengan SKTM, KKS, atau terdaftar di DTKS.</li>
         <li>Tidak sedang menerima beasiswa penuh dari lembaga lain.</li>
         <li>Bersedia mengirim transkrip nilai setiap akhir semester.</li>
@@ -794,7 +773,7 @@ a{ color:inherit; }
       <li class="step">
         <span class="step__no">4</span>
         <h3 class="step__title">Pengumuman &amp; pencairan</h3>
-        <p class="step__text">Hasil dikirim lewat email ke semua pendaftar, lolos maupun tidak. Penerima yang lolos mulai menerima bantuan di tanggal 5 berikutnya.</p>
+        <p class="step__text">Hasil dikirim lewat email ke semua pendaftar, lolos maupun tidak. Penerima yang lolos mulai menerima bantuan di tanggal 25 berikutnya.</p>
       </li>
     </ol>
 
@@ -873,19 +852,19 @@ a{ color:inherit; }
       </details>
       <details class="faq__item">
         <summary class="faq__q">Berapa lama bantuannya berjalan?</summary>
-        <div class="faq__a"><p>Selama masa studi normal, sampai maksimal semester 8 untuk S1 dan semester 6 untuk D3. Setiap semester ada perpanjangan otomatis selama laporan nilai dikirim dan IPK terjaga di atas 3,00.</p></div>
+        <div class="faq__a"><p>Selama masa studi normal, sampai maksimal semester 8 untuk S1 dan semester 6 untuk D3. Setiap semester ada perpanjangan otomatis selama laporan nilai dikirim dan IPK terjaga di atas 2,75.</p></div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">Saya penerima KIP-K, boleh ikut daftar?</summary>
         <div class="faq__a"><p>Boleh. KIP-K menanggung UKT, sementara bantuan kami untuk biaya hidup bulanan, jadi keduanya bisa berjalan bersamaan. Yang tidak bisa digabung adalah beasiswa penuh yang sudah mencakup biaya hidup.</p></div>
       </details>
       <details class="faq__item">
-        <summary class="faq__q">Kalau IPK saya turun di bawah 3,00?</summary>
-        <div class="faq__a"><p>Bantuan tidak langsung dihentikan. Kamu masuk masa pembinaan satu semester bersama mentor. Kalau semester berikutnya IPK kembali di atas 3,00, program lanjut seperti biasa.</p></div>
+        <summary class="faq__q">Kalau IPK saya turun di bawah 2,75?</summary>
+        <div class="faq__a"><p>Bantuan tidak langsung dihentikan. Kirim penjelasan singkat ke kami lewat email — kalau ada alasan yang bisa dipertimbangkan, misalnya sakit, musibah keluarga, atau harus kerja sambilan, bantuan tetap dilanjutkan. Yang kami lihat bukan cuma angkanya, tapi keadaan di baliknya.</p></div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">Kapan pengumuman hasil seleksi?</summary>
-        <div class="faq__a"><p>Sekitar empat minggu setelah formulir ditutup. Semua pendaftar dapat email, termasuk yang belum lolos, jadi tidak perlu menebak-nebak.</p></div>
+        <div class="faq__a"><p>Sekitar empat minggu setelah formulir ditutup. Semua pendaftar dapat email, termasuk yang belum lolos.</p></div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">Bisa daftar lagi kalau tahun lalu tidak lolos?</summary>
@@ -921,9 +900,9 @@ a{ color:inherit; }
     <div class="foot__col">
       <p class="foot__head">Kontak</p>
       <!-- GANTI: kontak asli yayasan -->
-      <a href="mailto:halo@algebrafoundation.org">halo@algebrafoundation.org</a>
-      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://wa.me/62800000000" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:foundation.algebra@gmail.com">foundation.algebra@gmail.com</a>
+      <!-- GANTI: username Instagram yayasan -->
+      <a href="https://instagram.com/GANTI-USERNAME" target="_blank" rel="noopener">Instagram</a>
       <p class="foot__addr">Jakarta, Indonesia</p>
     </div>
   </div>

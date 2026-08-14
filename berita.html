@@ -159,29 +159,34 @@ a{ color:inherit; }
 .hero__lead{ font-size:clamp(16px,1.6vw,18.5px); line-height:1.68; color:#C3D9EE; max-width:52ch; margin:18px 0 30px; }
 .hero__cta{ display:flex; flex-wrap:wrap; gap:12px; }
 
-/* --- TANDA TANGAN: tumpukan bukti transfer --- */
-.slips{ position:relative; height:330px; }
-.slip{
-  position:absolute; left:0; right:0; border-radius:18px; padding:20px 22px;
-  background:linear-gradient(150deg, #FFFFFF, #F2F7FD);
-  box-shadow:0 30px 60px -28px rgba(4,16,36,.85);
-  color:var(--navy);
+/* --- TANDA TANGAN: daftar kampus asal penerima --- */
+.kampus{
+  background:linear-gradient(150deg, rgba(255,255,255,.11), rgba(255,255,255,.035));
+  border:1px solid rgba(156,198,236,.26);
+  border-radius:18px; padding:26px 28px 22px;
+  box-shadow:0 30px 62px -34px rgba(4,16,36,.85);
+  backdrop-filter:blur(6px);
 }
-.slip--3{ top:0;   transform:rotate(-4deg) scale(.9);  opacity:.5; }
-.slip--2{ top:44px; transform:rotate(2.5deg) scale(.95); opacity:.78; }
-.slip--1{ top:96px; transform:rotate(-1deg); }
-.slip--1{ animation:bob 6s ease-in-out infinite; }
-@keyframes bob{ 0%,100%{ transform:rotate(-1deg) translateY(0); } 50%{ transform:rotate(-1deg) translateY(-9px); } }
-
-.slip__top{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px; }
-.slip__tag{ display:flex; align-items:center; gap:7px; font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:#1F8A56; }
-.slip__tag .dot{ width:7px; height:7px; border-radius:50%; background:#22A366; }
-.slip__when{ font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.04em; }
-.slip__amt{ font-family:var(--serif); font-size:34px; font-weight:600; letter-spacing:-.02em; line-height:1; margin:0 0 4px; }
-.slip__from{ font-size:13.5px; color:var(--muted); margin:0 0 16px; }
-.slip__foot{ display:flex; align-items:center; gap:10px; border-top:1px dashed var(--line); padding-top:13px; }
-.slip__ava{ width:28px; height:28px; border-radius:8px; background:linear-gradient(150deg,var(--azure),var(--navy)); flex:none; }
-.slip__note{ font-size:12.5px; color:var(--muted); margin:0; }
+.kampus__head{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.17em; text-transform:uppercase;
+  color:var(--azure-300); margin:0 0 6px; padding-bottom:15px;
+  border-bottom:1px solid rgba(156,198,236,.24);
+}
+.kampus__list{ list-style:none; margin:0; padding:0; }
+.kampus__list li{
+  display:flex; align-items:baseline; justify-content:space-between; gap:16px;
+  padding:12px 0; border-bottom:1px solid rgba(156,198,236,.13);
+}
+.kampus__list li:last-child{ border-bottom:0; }
+.kampus__nama{ font-size:15.5px; font-weight:500; color:#EAF2FA; line-height:1.35; }
+.kampus__kota{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:#8FB0CE; flex:none;
+}
+.kampus__more{
+  font-family:var(--mono); font-size:11.5px; color:#8FB0CE; margin:0;
+  padding-top:15px; border-top:1px solid rgba(156,198,236,.24);
+}
 
 /* --- rel bulan --- */
 .ledger{ margin-top:clamp(40px,6vw,60px); }
@@ -442,7 +447,7 @@ a{ color:inherit; }
 /* =========== RESPONSIF =========== */
 @media (max-width:980px){
   .hero__grid{ grid-template-columns:1fr; gap:44px; }
-  .slips{ height:300px; max-width:420px; margin:0 auto; }
+  .kampus{ max-width:460px; margin:0 auto; }
   .hero__rings{ top:-12%; right:-40%; opacity:.35; }
 }
 @media (max-width:900px){
@@ -475,8 +480,8 @@ a{ color:inherit; }
   body{ font-size:16px; }
   .strip__grid{ grid-template-columns:1fr 1fr; }
   .foot__inner{ grid-template-columns:1fr; gap:32px; }
-  .slips{ height:290px; }
-  .slip__amt{ font-size:30px; }
+  .kampus{ padding:22px 20px 18px; }
+  .kampus__nama{ font-size:14.5px; }
 }
 
 @media (prefers-reduced-motion:reduce){
@@ -584,7 +589,7 @@ a{ color:inherit; }
         <p>
           Sepanjang semester genap, bantuan tersalurkan ke 128 penerima aktif di 31 kampus,
           tersebar di 17 kota dan kabupaten. Pencairan berjalan enam kali, semuanya tepat di
-          tanggal 5.
+          tanggal 25.
         </p>
         <ul>
           <li>Rata-rata IPK penerima naik tipis dari 3,31 ke 3,38.</li>
@@ -669,9 +674,9 @@ a{ color:inherit; }
 
     <div class="foot__col">
       <p class="foot__head">Kontak</p>
-      <a href="mailto:halo@algebrafoundation.org">halo@algebrafoundation.org</a>
-      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://wa.me/62800000000" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:foundation.algebra@gmail.com">foundation.algebra@gmail.com</a>
+      <!-- GANTI: username Instagram yayasan -->
+      <a href="https://instagram.com/GANTI-USERNAME" target="_blank" rel="noopener">Instagram</a>
       <p class="foot__addr">Jakarta, Indonesia</p>
     </div>
   </div>
