@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Algebra Foundation">
+  <!-- lintasan / swoosh -->
+  <path d="M8 88 C 34 66, 86 66, 112 88" fill="none" stroke="#2F80CE" stroke-width="7" stroke-linecap="round" opacity=".95"/>
+  <path d="M20 100 C 40 86, 80 86, 100 100" fill="none" stroke="#9CC6EC" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+  <!-- huruf A / tangga naik -->
+  <path d="M34 84 L60 30 L86 84" fill="none" stroke="#123363" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 62 L74 62" stroke="#123363" stroke-width="9" stroke-linecap="round"/>
+  <!-- topi wisuda -->
+  <path d="M60 6 L92 21 L60 36 L28 21 Z" fill="#123363"/>
+  <path d="M60 6 L92 21 L60 36 Z" fill="#1C4B8B"/>
+  <path d="M92 21 L92 33" stroke="#2F80CE" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="92" cy="37" r="4.5" fill="#2F80CE"/>
+</svg>

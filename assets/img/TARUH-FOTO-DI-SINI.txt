@@ -1,0 +1,20 @@
+FOTO YANG BISA KAMU TAMBAHKAN
+=============================
+
+Taruh file di folder ini dengan nama persis seperti di bawah.
+Kalau belum ada, slot foto tetap tampil rapi sebagai panel biru berlogo.
+
+  foto-kegiatan.jpg   -> halaman utama, bagian "Tentang kami"   (rasio 4:3, mis. 1200x900)
+  berita-1.jpg        -> kartu berita ke-1                       (rasio 16:9, mis. 1200x675)
+  berita-2.jpg        -> kartu berita ke-2                       (rasio 16:9)
+  berita-3.jpg        -> kartu berita ke-3                       (rasio 16:9)
+  berita-4.jpg        -> berita ke-4 di halaman berita.html      (rasio 16:9)
+
+LOGO
+====
+  logo.svg        -> logo warna, dipakai di header (sudah ada)
+  logo-putih.svg  -> logo putih, dipakai di footer (sudah ada)
+
+Kalau mau pakai logo aslimu sendiri:
+simpan sebagai logo.png dan logo-putih.png, lalu di file HTML
+ganti tulisan "logo.svg" jadi "logo.png" (dan "logo-putih.svg" jadi "logo-putih.png").
