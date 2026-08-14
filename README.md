@@ -14,7 +14,7 @@ kebutuhan kuliah — kos, makan, transportasi — juga datang tiap bulan.
 
 ## Siapa yang bisa mendaftar
 
-Mahasiswa aktif D3, D4, atau S1 semester 2–6 di perguruan tinggi
+Mahasiswa aktif D3, D4, atau S1 semester 1–8 di perguruan tinggi
 terakreditasi, IPK minimal 2,75, dan berasal dari keluarga prasejahtera.
 
 ## Pendaftaran
