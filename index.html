@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algebra Foundation — Bantuan biaya kuliah bulanan untuk mahasiswa D3 &amp; S1</title>
+<meta name="description" content="Algebra Foundation menyalurkan bantuan biaya kuliah dan biaya hidup setiap bulan untuk mahasiswa D3 dan S1 di Indonesia. Pendaftaran gratis lewat Google Form.">
+<meta name="theme-color" content="#123363">
+<meta property="og:title" content="Algebra Foundation">
+<meta property="og:description" content="Bantuan biaya kuliah bulanan untuk mahasiswa D3 & S1 di Indonesia.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/logo.svg">
+<link rel="icon" href="assets/img/logo.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<noscript><style>
+  .reveal{opacity:1!important;transform:none!important}
+  .ledger__month{opacity:1!important;transform:none!important}
+  .nav{max-height:none!important;opacity:1!important;pointer-events:auto!important}
+</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#utama">Lewati ke konten</a>
+
+<!-- ================= HEADER ================= -->
+<header class="topbar" id="topbar">
+  <div class="wrap topbar__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__img" src="assets/img/logo.svg" alt="">
+      <span class="brand__text">
+        <span class="brand__name">Algebra</span>
+        <span class="brand__sub">Foundation</span>
+      </span>
+    </a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#tentang">Tentang</a>
+      <a href="#program">Program</a>
+      <a href="#syarat">Syarat</a>
+      <a href="#cara-daftar">Cara daftar</a>
+      <a href="berita.html">Berita</a>
+      <!-- GANTI LINK GOOGLE FORM: cari "GANTI-LINK-INI" di semua file -->
+      <a class="btn btn--pill" href="https://forms.gle/GANTI-LINK-INI" target="_blank" rel="noopener">Daftar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="utama">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <svg class="hero__rings" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+    <circle cx="300" cy="300" r="120"/><circle cx="300" cy="300" r="180"/>
+    <circle cx="300" cy="300" r="240"/><circle cx="300" cy="300" r="298"/>
+  </svg>
+
+  <div class="wrap hero__grid">
+    <div class="hero__col">
+      <p class="eyebrow reveal"><span class="dot"></span> Pendaftaran angkatan 4 dibuka</p>
+
+      <h1 class="hero__title reveal">
+        Biaya kuliah datang<br>tiap bulan.<br>
+        <em>Bantuan kami juga.</em>
+      </h1>
+
+      <svg class="hero__arc" viewBox="0 0 600 50" fill="none" aria-hidden="true">
+        <path d="M4 40 C 140 8, 460 8, 596 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+
+      <p class="hero__lead reveal">
+        Algebra Foundation menyalurkan bantuan biaya hidup dan biaya kuliah setiap bulan
+        untuk mahasiswa D3 dan S1 di Indonesia yang punya semangat belajar tinggi,
+        tapi terkendala biaya. Gratis, tanpa ikatan dinas.
+      </p>
+
+      <div class="hero__cta reveal">
+        <a class="btn btn--primary" href="https://forms.gle/GANTI-LINK-INI" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M9 11h3"/></svg>
+          Daftar lewat Google Form
+        </a>
+        <a class="btn btn--ghost" href="#syarat">Cek syaratnya dulu</a>
+      </div>
+    </div>
+
+    <!-- tumpukan bukti transfer bulanan -->
+    <div class="slips" aria-hidden="true">
+      <div class="slip slip--3">
+        <div class="slip__top">
+          <span class="slip__tag"><span class="dot"></span> Dana masuk</span>
+          <span class="slip__when">5 Agu</span>
+        </div>
+        <p class="slip__amt">Rp 750.000</p>
+        <p class="slip__from">Algebra Foundation</p>
+      </div>
+
+      <div class="slip slip--2">
+        <div class="slip__top">
+          <span class="slip__tag"><span class="dot"></span> Dana masuk</span>
+          <span class="slip__when">5 Sep</span>
+        </div>
+        <p class="slip__amt">Rp 750.000</p>
+        <p class="slip__from">Algebra Foundation</p>
+      </div>
+
+      <div class="slip slip--1">
+        <div class="slip__top">
+          <span class="slip__tag"><span class="dot"></span> Dana masuk</span>
+          <span class="slip__when">5 Okt · 09.12</span>
+        </div>
+        <!-- GANTI: nominal bantuan sesuai kebijakan yayasan -->
+        <p class="slip__amt">Rp 750.000</p>
+        <p class="slip__from">Algebra Foundation · Bantuan bulanan</p>
+        <div class="slip__foot">
+          <span class="slip__ava"></span>
+          <p class="slip__note">Masuk otomatis tiap tanggal 5, tanpa perlu mengajukan ulang.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- rel 12 bulan -->
+  <div class="wrap">
+    <div class="ledger" id="ledger">
+      <div class="ledger__rail">
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Agu</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Sep</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Okt</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Nov</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Des</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Jan</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Feb</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Mar</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Apr</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Mei</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Jun</span></div>
+        <div class="ledger__month"><span class="ledger__tick"></span><span class="ledger__label">Jul</span></div>
+      </div>
+      <p class="ledger__note">Cair setiap tanggal 5 &nbsp;·&nbsp; sepanjang masa studi, bukan sekali di awal tahun</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANGKA ================= -->
+<section class="strip">
+  <div class="wrap strip__grid">
+    <!-- GANTI: angka-angka di bawah ini -->
+    <div class="stat"><span class="stat__num">128</span><span class="stat__cap">penerima aktif</span></div>
+    <div class="stat"><span class="stat__num">31</span><span class="stat__cap">kampus mitra</span></div>
+    <div class="stat"><span class="stat__num">17</span><span class="stat__cap">kota &amp; kabupaten</span></div>
+    <div class="stat"><span class="stat__num">Rp 1,1 M</span><span class="stat__cap">tersalurkan 2025</span></div>
+  </div>
+</section>
+
+<!-- ================= TENTANG ================= -->
+<section class="section" id="tentang">
+  <div class="wrap grid-2">
+    <div class="col-head">
+      <p class="kicker">Tentang kami</p>
+      <h2 class="h2">Yang bikin mahasiswa berhenti kuliah jarang nilainya. Biasanya biayanya.</h2>
+      <figure class="foto foto--43" style="margin-top:28px">
+        <!-- GANTI: taruh foto kegiatan di assets/img/foto-kegiatan.jpg -->
+        <img src="assets/img/foto-kegiatan.jpg" alt="Kegiatan penerima manfaat Algebra Foundation">
+        <span class="foto__hint">Taruh foto di<br>assets/img/foto-kegiatan.jpg</span>
+      </figure>
+    </div>
+
+    <div class="col-body prose">
+      <p>
+        Algebra Foundation adalah lembaga nirlaba yang fokus pada satu hal: menjaga
+        mahasiswa D3 dan S1 tetap bisa kuliah sampai selesai. Kami berdiri karena melihat
+        pola yang berulang — mahasiswa lolos seleksi masuk, semangat di semester awal,
+        lalu mundur di tengah jalan karena kos, transportasi, dan uang makan tidak lagi tertutup.
+      </p>
+      <p>
+        Karena itu bantuan kami berbentuk bulanan, bukan sekali cair di awal tahun.
+        Uang yang masuk tiap bulan lebih mudah dipakai untuk kebutuhan yang juga datang
+        tiap bulan, dan lebih kecil kemungkinannya habis di satu kebutuhan besar.
+      </p>
+      <p>
+        Dana berasal dari donasi perorangan, alumni, dan perusahaan mitra. Setiap rupiah
+        yang disalurkan kami laporkan terbuka lewat halaman <a href="berita.html">berita</a>
+        di akhir tiap semester.
+      </p>
+
+      <div class="quotes" style="margin-top:36px">
+        <!-- GANTI: cerita penerima asli -->
+        <figure class="quote">
+          <span class="quote__mark">&ldquo;</span>
+          <blockquote class="quote__text">Saya sempat menyiapkan surat cuti kuliah. Bantuan yang masuk tiap bulan bikin saya tidak perlu mengirimnya.</blockquote>
+          <figcaption class="quote__who">
+            <span class="quote__ava">RA</span>
+            <span>
+              <p class="quote__name">Rani A.</p>
+              <p class="quote__meta">D3 Akuntansi · Semarang</p>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote">
+          <span class="quote__mark">&ldquo;</span>
+          <blockquote class="quote__text">Yang paling menolong bukan cuma uangnya, tapi mentor yang bantu saya menyiapkan magang.</blockquote>
+          <figcaption class="quote__who">
+            <span class="quote__ava">BS</span>
+            <span>
+              <p class="quote__name">Bagas S.</p>
+              <p class="quote__meta">S1 Teknik Sipil · Makassar</p>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAM ================= -->
+<section class="section section--sky" id="program">
+  <div class="wrap">
+    <p class="kicker">Program</p>
+    <h2 class="h2 h2--wide">Apa yang kamu terima</h2>
+
+    <div class="cards">
+      <article class="card">
+        <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 12h.01M18 12h.01"/></svg></span>
+        <p class="card__tag">Tiap bulan</p>
+        <h3 class="card__title">Bantuan biaya hidup</h3>
+        <p class="card__text">Ditransfer langsung ke rekening penerima setiap tanggal 5. Bebas dipakai untuk kos, makan, transportasi, kuota, atau kebutuhan kuliah lain. Tidak perlu nota.</p>
+      </article>
+
+      <article class="card">
+        <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18l2-1.4 2 1.4 2-1.4 2 1.4 2-1.4 2 1.4V3l-2 1.4L13 3l-2 1.4L9 3 7 4.4z"/><path d="M9 9h6M9 13h4"/></svg></span>
+        <p class="card__tag">Tiap semester</p>
+        <h3 class="card__title">Bantuan UKT tambahan</h3>
+        <p class="card__text">Untuk penerima yang belum tercakup KIP-K atau beasiswa kampus, tersedia bantuan tambahan saat pembayaran UKT. Diajukan lewat formulir perpanjangan.</p>
+      </article>
+
+      <article class="card">
+        <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1.6a3.4 3.4 0 0 0-3.4-3.4H6.4A3.4 3.4 0 0 0 3 18.4V20"/><circle cx="9.5" cy="7.5" r="3.5"/><path d="M21 20v-1.6a3.4 3.4 0 0 0-2.6-3.3M15.5 4.2a3.5 3.5 0 0 1 0 6.6"/></svg></span>
+        <p class="card__tag">Sepanjang program</p>
+        <h3 class="card__title">Pendampingan &amp; mentor</h3>
+        <p class="card__text">Setiap penerima dipasangkan dengan mentor alumni sebidang untuk konsultasi akademik, magang, dan persiapan kerja. Pertemuan daring sebulan sekali.</p>
+      </article>
+
+      <article class="card">
+        <span class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a4.6 4.6 0 0 0-6.5 0L12 7.9 9.7 5.6a4.6 4.6 0 1 0-6.5 6.5l8.8 8.8 8.8-8.8a4.6 4.6 0 0 0 0-6.5z"/></svg></span>
+        <p class="card__tag">Tanpa syarat balik</p>
+        <h3 class="card__title">Bukan pinjaman</h3>
+        <p class="card__text">Tidak ada pengembalian dana, tidak ada ikatan dinas, tidak ada biaya pendaftaran. Kami hanya minta laporan nilai tiap akhir semester.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SYARAT ================= -->
+<section class="section" id="syarat">
+  <div class="wrap grid-2">
+    <div class="col-head">
+      <p class="kicker">Syarat</p>
+      <h2 class="h2">Cek dulu, biar tidak sia-sia isi formulirnya.</h2>
+      <p class="col-head__note">Semua poin di samping wajib terpenuhi. Kalau ada satu yang belum, pendaftaran belum bisa diproses di periode ini.</p>
+    </div>
+
+    <div class="col-body">
+      <ul class="checklist">
+        <li>Warga negara Indonesia.</li>
+        <li>Mahasiswa aktif D3, D4, atau S1 di perguruan tinggi terakreditasi, negeri maupun swasta.</li>
+        <li>Sedang menempuh semester 2 sampai 6 saat mendaftar.</li>
+        <li>IPK minimal 3,00 dari skala 4,00.</li>
+        <li>Berasal dari keluarga prasejahtera, dibuktikan dengan SKTM, KKS, atau terdaftar di DTKS.</li>
+        <li>Tidak sedang menerima beasiswa penuh dari lembaga lain.</li>
+        <li>Bersedia mengirim transkrip nilai setiap akhir semester.</li>
+      </ul>
+
+      <div class="docbox">
+        <p class="docbox__head">Berkas yang perlu disiapkan sebelum mengisi formulir</p>
+        <ol class="docbox__list">
+          <li>Scan KTP dan Kartu Keluarga</li>
+          <li>Scan Kartu Tanda Mahasiswa</li>
+          <li>Transkrip nilai semester terakhir</li>
+          <li>SKTM / KKS / bukti DTKS</li>
+          <li>Esai singkat, maksimal 500 kata, tentang rencanamu setelah lulus</li>
+        </ol>
+        <p class="docbox__foot">Semua berkas dalam format PDF atau JPG, maksimal 2&nbsp;MB per file.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARA DAFTAR ================= -->
+<section class="section section--navy" id="cara-daftar">
+  <div class="wrap">
+    <p class="kicker kicker--light">Cara daftar</p>
+    <h2 class="h2 h2--wide h2--light">Empat langkah, sekitar 30 menit.</h2>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step__no">1</span>
+        <h3 class="step__title">Siapkan berkas</h3>
+        <p class="step__text">Kumpulkan lima dokumen di daftar atas dalam satu folder. Beri nama file yang jelas, misalnya <span class="mono">KTP_NamaLengkap.pdf</span>.</p>
+      </li>
+      <li class="step">
+        <span class="step__no">2</span>
+        <h3 class="step__title">Isi Google Form</h3>
+        <p class="step__text">Formulir dibuka tiap periode pendaftaran. Isi sekali jalan — jawaban tersimpan otomatis kalau kamu login dengan akun Google.</p>
+      </li>
+      <li class="step">
+        <span class="step__no">3</span>
+        <h3 class="step__title">Verifikasi &amp; wawancara</h3>
+        <p class="step__text">Kami cek kelengkapan berkas, lalu mengundang pendaftar yang lolos untuk wawancara daring sekitar 20 menit.</p>
+      </li>
+      <li class="step">
+        <span class="step__no">4</span>
+        <h3 class="step__title">Pengumuman &amp; pencairan</h3>
+        <p class="step__text">Hasil dikirim lewat email ke semua pendaftar, lolos maupun tidak. Penerima yang lolos mulai menerima bantuan di tanggal 5 berikutnya.</p>
+      </li>
+    </ol>
+
+    <div class="callout">
+      <div class="callout__text">
+        <!-- GANTI: periode pendaftaran -->
+        <p class="callout__when">Pendaftaran periode ini dibuka sampai 30 September 2026</p>
+        <p class="callout__sub">Gratis. Tidak ada biaya apa pun dalam seluruh proses seleksi.</p>
+      </div>
+      <a class="btn btn--primary btn--lg" href="https://forms.gle/GANTI-LINK-INI" target="_blank" rel="noopener">Buka formulir pendaftaran</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BERITA ================= -->
+<section class="section" id="berita">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">Berita</p>
+        <h2 class="h2 h2--wide">Kabar terbaru</h2>
+      </div>
+      <a class="link-arrow" href="berita.html">Semua berita</a>
+    </div>
+
+    <div class="news">
+      <a class="news__item" href="berita.html#pendaftaran-2026">
+        <figure class="foto foto--169 news__thumb">
+          <img src="assets/img/berita-1.jpg" alt="">
+          <span class="foto__hint">assets/img/berita-1.jpg</span>
+        </figure>
+        <div class="news__body">
+          <time class="news__date" datetime="2026-08-01">1 Agustus 2026</time>
+          <h3 class="news__title">Pendaftaran angkatan keempat resmi dibuka</h3>
+          <p class="news__text">Kuota 60 penerima baru untuk tahun ajaran 2026/2027. Formulir ditutup 30 September 2026.</p>
+        </div>
+      </a>
+
+      <a class="news__item" href="berita.html#laporan-genap">
+        <figure class="foto foto--169 news__thumb">
+          <img src="assets/img/berita-2.jpg" alt="">
+          <span class="foto__hint">assets/img/berita-2.jpg</span>
+        </figure>
+        <div class="news__body">
+          <time class="news__date" datetime="2026-07-12">12 Juli 2026</time>
+          <h3 class="news__title">Laporan penyaluran semester genap 2025/2026</h3>
+          <p class="news__text">Rincian dana yang tersalurkan, jumlah penerima aktif, dan rata-rata IPK penerima selama satu semester.</p>
+        </div>
+      </a>
+
+      <a class="news__item" href="berita.html#temu-yogya">
+        <figure class="foto foto--169 news__thumb">
+          <img src="assets/img/berita-3.jpg" alt="">
+          <span class="foto__hint">assets/img/berita-3.jpg</span>
+        </figure>
+        <div class="news__body">
+          <time class="news__date" datetime="2026-06-20">20 Juni 2026</time>
+          <h3 class="news__title">Temu penerima manfaat wilayah Yogyakarta</h3>
+          <p class="news__text">Empat puluh penerima dari sepuluh kampus berkumpul untuk sesi mentoring dan pelatihan menulis CV.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TANYA JAWAB ================= -->
+<section class="section section--sky" id="tanya-jawab">
+  <div class="wrap wrap--narrow">
+    <p class="kicker">Tanya jawab</p>
+    <h2 class="h2 h2--wide">Yang paling sering ditanya</h2>
+
+    <div class="faq">
+      <details class="faq__item">
+        <summary class="faq__q">Apakah benar-benar gratis?</summary>
+        <div class="faq__a"><p>Benar. Tidak ada biaya pendaftaran, biaya administrasi, atau potongan dari dana bantuan. Kalau ada pihak yang meminta uang mengatasnamakan Algebra Foundation, laporkan ke kami lewat email di bawah.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Berapa lama bantuannya berjalan?</summary>
+        <div class="faq__a"><p>Selama masa studi normal, sampai maksimal semester 8 untuk S1 dan semester 6 untuk D3. Setiap semester ada perpanjangan otomatis selama laporan nilai dikirim dan IPK terjaga di atas 3,00.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Saya penerima KIP-K, boleh ikut daftar?</summary>
+        <div class="faq__a"><p>Boleh. KIP-K menanggung UKT, sementara bantuan kami untuk biaya hidup bulanan, jadi keduanya bisa berjalan bersamaan. Yang tidak bisa digabung adalah beasiswa penuh yang sudah mencakup biaya hidup.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Kalau IPK saya turun di bawah 3,00?</summary>
+        <div class="faq__a"><p>Bantuan tidak langsung dihentikan. Kamu masuk masa pembinaan satu semester bersama mentor. Kalau semester berikutnya IPK kembali di atas 3,00, program lanjut seperti biasa.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Kapan pengumuman hasil seleksi?</summary>
+        <div class="faq__a"><p>Sekitar empat minggu setelah formulir ditutup. Semua pendaftar dapat email, termasuk yang belum lolos, jadi tidak perlu menebak-nebak.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Bisa daftar lagi kalau tahun lalu tidak lolos?</summary>
+        <div class="faq__a"><p>Bisa, selama masih memenuhi syarat semester. Banyak penerima kami sekarang adalah pendaftar ulang di periode kedua.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__brand">
+      <img class="foot__logo" src="assets/img/logo-putih.svg" alt="">
+      <span class="foot__wordmark">
+        <span class="brand__name">Algebra</span>
+        <span class="brand__sub">Foundation</span>
+      </span>
+      <p class="foot__blurb">Bantuan biaya kuliah bulanan untuk mahasiswa D3 dan S1 di Indonesia.</p>
+    </div>
+
+    <div class="foot__col">
+      <p class="foot__head">Halaman</p>
+      <a href="#tentang">Tentang</a>
+      <a href="#program">Program</a>
+      <a href="#syarat">Syarat</a>
+      <a href="#cara-daftar">Cara daftar</a>
+      <a href="berita.html">Berita</a>
+    </div>
+
+    <div class="foot__col">
+      <p class="foot__head">Kontak</p>
+      <!-- GANTI: kontak asli yayasan -->
+      <a href="mailto:halo@algebrafoundation.org">halo@algebrafoundation.org</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/62800000000" target="_blank" rel="noopener">WhatsApp</a>
+      <p class="foot__addr">Jakarta, Indonesia</p>
+    </div>
+  </div>
+
+  <div class="wrap foot__bar">
+    <p>© <span id="tahun">2026</span> Algebra Foundation</p>
+    <p>Kami tidak pernah memungut biaya dalam bentuk apa pun.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
